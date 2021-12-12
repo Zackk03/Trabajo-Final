@@ -1,18 +1,18 @@
 import os
-#Add two numbers----------------------------------#
+#Sumar dos números----------------------------------#
 try:
-    addanother = True
-    while addanother:
+    continuacion = True
+    while continuacion:
         os.system("cls")
-        fnum = int(input("Add the first number: ")) 
-        snum = int(input("Add the second number: "))
-        result = fnum + snum
-        print("The result is: " + str(result))
+        pnum = int(input("Ingrese el primer número: ")) 
+        snum = int(input("Ingrese el segundo número: "))
+        resultado = pnum + snum
+        print("El resultado es: " + str(resultado))
 
-        option = input("Would you add another two numbers? [y/n] >> ")
-        if option == "y":
-            addanother = True
-        elif option == "n":
+        opcion = input("¿Desea sumar dos número de nuevo? [s/n] >> ")
+        if opcion == "s":
+            continuacion = True
+        elif opcion == "n":
             break
 except:
-    input("Add a correct values!")
+    input("¡Ingrese datos válidos!")
